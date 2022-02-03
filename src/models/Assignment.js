@@ -5,6 +5,7 @@ const assignmentSchema = {
   assignmentId: {
     type: Schema.Types.ObjectId,
     required: true,
+    auto: true,
   },
   assignmentName: {
     type: String,
