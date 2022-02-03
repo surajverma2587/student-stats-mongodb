@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/surajverma2587/student-stats-mongodb#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "moment": "^2.29.1",
+    "mongoose": "^6.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
