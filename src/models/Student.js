@@ -5,17 +5,17 @@ const assignments = require("./Assignment");
 const studentSchema = {
   firstName: {
     type: String,
-    // required: true,
+    required: true,
     maxLength: 50,
   },
   lastName: {
     type: String,
-    // required: true,
+    required: true,
     maxLength: 50,
   },
   githubUrl: {
     type: String,
-    // required: true,
+    required: true,
     maxLength: 50,
   },
   assignments: [assignments],

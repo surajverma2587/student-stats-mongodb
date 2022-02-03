@@ -27,7 +27,16 @@ const courseSchema = {
   ],
 };
 
-const schema = new Schema(courseSchema);
+const schema = new Schema(courseSchema, {
+  toJSON: {
+    getters: true,
+  },
+  id: false,
+});
+
+schema.virtual("numberOfEnrolledStudents").get(function () {
+  return this.students.length;
+});
 
 const Course = model("course", schema);
 
